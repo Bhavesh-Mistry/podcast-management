@@ -1,0 +1,23 @@
+// site variables
+$clr-body: #0C003D;
+
+$white: #fff;
+$black: #000;
+$clr-primary: #221D48;
+$clr-secondary: #0052FF;
+$clr-acent: #00F9EF;
+$clr-arrow-icon: #ABA6BD;
+
+$clr-paragraph: #DEE3FF;
+$clr-primary-gradient: linear-gradient(90deg, #00F9EF 0%, #00E0FF 25%, #00C4FF 50%, #00C4FF 75%, #007EFB 100%);
+$clr-hover-gradient: linear-gradient(280deg, #00F9EF 0%, #00E0FF 25%, #00C4FF 50%, #00C4FF 75%, #007EFB 100%);
+
+
+
+// media queries
+$extra-large-desktops: "max-width: 1600px";
+$large-desktops: "max-width: 1440px";
+$desktops: "max-width: 1199px";
+$tablets: "max-width: 991px";
+$landscape-phones: "max-width: 767px";
+$portrait-phones: "max-width: 575px";

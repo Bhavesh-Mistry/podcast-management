@@ -1,0 +1,19 @@
+.btn-gredient {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0px;
+   width: 48px;
+   height: 48px;
+   background: $clr-primary-gradient;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 50%;
+   font-size: 18px;
+   color: $white;
+   transition: 0.2s ease-out;
+
+   &:hover {
+      background: $clr-hover-gradient;
+      color: $white;
+   }
+}

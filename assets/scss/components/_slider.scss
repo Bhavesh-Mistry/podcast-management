@@ -1,0 +1,224 @@
+.carousel {
+   .carousel-indicators {
+      margin: 0 0 30px;
+      left: auto;
+      width: 560px;
+
+      [data-bs-target] {
+         opacity: 1;
+         width: 8px;
+         height: 8px;
+         margin: 0 8px;
+         padding: 0;
+         border: 2px solid transparent;
+         border-radius: 50%;
+         background-color: rgba($white, 0.75);
+         filter: drop-shadow(0px 4px 4px rgba($black, 0.25));
+      }
+
+      .active {
+         background-color: $clr-acent;
+         border-color: $white;
+      }
+   }
+
+
+   .carousel-control-next,
+   .carousel-control-prev {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 32px;
+      bottom: inherit;
+      left: inherit;
+      right: 120px;
+      font-size: 20px;
+      color: rgba($clr-arrow-icon, .50);
+      opacity: 1;
+
+      @media($extra-large-desktops) {
+         right: 106px;
+      }
+
+      &:hover {
+         color: $clr-acent;
+      }
+   }
+
+   .carousel-control-next {
+      color: $clr-acent;
+      right: 64px;
+
+      @media($extra-large-desktops) {
+         right: 50px;
+      }
+   }
+
+
+   .carousel-inner {
+      border-radius: 48px;
+      overflow: hidden;
+      height: 400px;
+
+      @media($extra-large-desktops) {
+         height: 350px;
+      }
+
+      .carousel-item {
+         height: 100%;
+
+         .carousel-caption {
+            font-family: "Josefin Sans", sans-serif;
+            padding: 0 64px;
+            text-align: left;
+            left: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($clr-primary, .85);
+            overflow: hidden;
+            border-radius: 0 48px 48px 0;
+            width: 560px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+
+            @media($extra-large-desktops) {
+               padding: 0 50px;
+               width: 500px;
+            }
+
+            h5 {
+               font-weight: 500;
+               font-size: 18px;
+               line-height: 24px;
+               color: $clr-acent;
+               text-shadow: 0px 4px 20px rgba($black, 0.3);
+               margin: 0 0 15px;
+
+               @media($extra-large-desktops) {
+                  font-size: 16px;
+                  line-height: 20px;
+                  margin: 0 0 12px;
+               }
+            }
+
+            h4 {
+               font-weight: 700;
+               font-size: 22px;
+               line-height: 35px;
+               text-transform: capitalize;
+               color: $white;
+               text-shadow: 0px 4px 20px rgba($black, 0.3);
+               margin: 0 0 12px;
+
+               @media($extra-large-desktops) {
+                  font-size: 18px;
+                  line-height: 28px;
+                  margin: 0 0 10px;
+               }
+            }
+
+            h6 {
+               position: relative;
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 16px;
+               color: $clr-paragraph;
+               text-shadow: 0px 4px 20px rgba($black, 0.3);
+               margin: 0 0 20px;
+               padding-left: 40px;
+               position: relative;
+
+               @media($extra-large-desktops) {
+                  font-size: 14px;
+                  line-height: 20px;
+                  margin: 0 0 15px;
+               }
+
+               &::before {
+                  content: "";
+                  background-color: $clr-paragraph;
+                  position: absolute;
+                  width: 30px;
+                  height: 1.5px;
+                  box-shadow: 0px 4px 20px rgba($black, 0.3);
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 0;
+               }
+            }
+
+            p {
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 24px;
+               color: $clr-paragraph;
+               text-shadow: 0px 4px 20px rgba($black, 0.3);
+               margin: 0;
+
+               @media($extra-large-desktops) {
+                  font-size: 14px;
+                  line-height: 20px;
+               }
+            }
+         }
+      }
+   }
+}
+
+.slider-main {
+   position: relative;
+   padding: 0 88px;
+
+   .slick-slider {
+      z-index: 5;
+
+      .slick-list {
+         // padding: 30px 0;
+         margin: 0 -20px;
+
+         // @media ($portrait-phones) {
+         //    margin: 0 -10px;
+         // }
+
+         // .slick-slide {
+         //    margin: 0 18px;
+
+         //    @media ($portrait-phones) {
+         //       margin: 0 10px;
+         //    }
+         // }
+      }
+   }
+
+   .sliderArrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .slick-arrow {
+         width: 64px;
+         height: 64px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 32px;
+         cursor: pointer;
+         color: $clr-acent;
+
+         &.slick-disabled,
+         &.slick-hidden {
+            pointer-events: none;
+            color: rgba($clr-arrow-icon, .5);
+            cursor: not-allowed;
+         }
+      }
+   }
+}

@@ -1,0 +1,172 @@
+.sec-featuring-today {
+   position: relative;
+   font-family: "Josefin Sans", sans-serif;
+
+   .heading-title {
+      margin: 0 0 32px;
+
+      @media($extra-large-desktops) {
+         margin: 0 0 20px;
+      }
+   }
+}
+
+.sec-trending {
+   position: relative;
+   padding: 48px 0;
+   font-family: "Josefin Sans", sans-serif;
+
+   .st-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      font-family: "Josefin Sans", sans-serif;
+      padding: 0 10px;
+
+      .st-img {
+         position: relative;
+         width: 100%;
+         height: auto;
+         border-radius: 16px;
+         overflow: hidden;
+         margin: 0 0px 16px;
+
+         img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: block;
+            object-fit: contain;
+         }
+
+         .btn-gredient {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+
+            i {
+               margin-left: 5px;
+            }
+         }
+
+         .st-episodes-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba($black, .64);
+            border-radius: 10px;
+            padding: 6px 8.5px;
+            position: absolute;
+            left: 7px;
+            bottom: 7px;
+            right: 7px;
+
+            h6 {
+               margin: 0;
+               font-size: 12px;
+               color: $white;
+               font-weight: 500;
+               white-space: nowrap;
+            }
+
+            .icon {
+               color: $white;
+               width: 24px;
+               height: 24px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               font-size: 18px;
+
+               &.fill {
+                  background: $clr-primary-gradient;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+               }
+
+            }
+         }
+      }
+
+      h5 {
+         margin: 0px 0 5px;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 24px;
+         color: $white;
+      }
+
+      p {
+         position: relative;
+         margin: 0;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 12px;
+         padding-left: 22px;
+         color: rgba($clr-paragraph, .70);
+         text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+
+         &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 1.5px;
+            background-color: rgba($clr-paragraph, .70);
+         }
+      }
+   }
+}
+
+.sec-recent-views {
+   position: relative;
+   padding: 0 0 48px 0;
+   font-family: "Josefin Sans", sans-serif;
+
+   .rv-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      font-family: "Josefin Sans", sans-serif;
+
+      .rv-img {
+         position: relative;
+         width: 100%;
+         height: auto;
+         border-radius: 16px;
+         overflow: hidden;
+         margin: 0 0 16px;
+
+         img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: block;
+            object-fit: contain;
+         }
+
+         .btn-gredient {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+
+            i {
+               margin-left: 5px;
+            }
+         }
+      }
+
+      h5 {
+         margin: 0px 0 0px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
+         color: rgba($white, .75);
+      }
+
+
+   }
+}

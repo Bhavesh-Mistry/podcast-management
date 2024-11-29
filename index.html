@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="" />
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+   <meta name="generator" content="Hugo 0.72.0" />
+   <link rel="icon" href="assets/images/favicon.ico" />
+
+   <title>Podcast Management System</title>
+
+   <!-- fonts -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet" />
+
+   <!-- css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+   <!-- slick slider css -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+   <!-- main css-->
+   <link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+
+<body>
+   <!-- main layout -->
+   <div class="layout-wrapper">
+
+      <!-- sidebar start -->
+      <aside class="app-sidebar">
+         <div class="app-sidebar-header">
+            <a href="#" class="app-sidebar-logo">
+               <img src="assets/images/svgs/logo.svg" alt="logo" />
+            </a>
+         </div>
+         <div class="app-sidebar-menu">
+            <ul class="navbar-nav">
+               <li class="dropdown">
+                  <a class="nav-link dropdown-toggle show" href="#" id="navbarDropdown" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                     <span class="icon"><i class="fas fa-home"></i></span>Home
+                  </a>
+                  <ul class="dropdown-menu show" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item active" href="#">For You</a></li>
+                     <li><a class="dropdown-item" href="#">Popular</a></li>
+                     <li><a class="dropdown-item" href="#">Business</a></li>
+                     <li><a class="dropdown-item" href="#">Travel</a></li>
+                     <li><a class="dropdown-item" href="#">Technology</a></li>
+                     <li><a class="dropdown-item" href="#">Energize</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">
+                     <span class="icon"><i class="fas fa-search"></i></span>Browse Podcasts
+                  </a>
+               </li>
+               <li class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                     <span class="icon"><i class="far fa-list-alt"></i></span>Your Library
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Add New Podcast</a></li>
+                     <li><a class="dropdown-item" href="#">Favorite Episodes</a></li>
+                     <li><a class="dropdown-item" href="#">downloads</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </aside>
+      <!-- sidebar end -->
+
+      <!-- main content start -->
+      <main class="lw-app-content">
+         <!-- main header start -->
+         <header class="lw-main-header">
+            <div class="d-flex align-items-center">
+               <a href="#" class="page-navigation page-prev">
+                  <i class="far fa-angle-left"></i>
+               </a>
+               <a href="#" class="page-navigation me-0 active page-next">
+                  <i class="far fa-angle-right"></i>
+               </a>
+            </div>
+            <div class="d-flex align-items-center">
+               <input type="search" class="form-control form-search" id="exampleFormControlInput1" placeholder="Search">
+               <a href="#" class="mh-notification">
+                  <i class="fas fa-bell"></i>
+               </a>
+               <a href="#" class="mh-user-profile">
+                  <img src="assets/images/user-img.png" alt="img" />
+               </a>
+            </div>
+         </header>
+         <!-- main header end -->
+
+         <!-- main header menu start -->
+         <div class="lw-main-header-menu">
+            <h4>Home</h4>
+            <a href="#" class="lw-menu-link active">For You</a>
+            <a href="#" class="lw-menu-link">Popular</a>
+            <a href="#" class="lw-menu-link">Business</a>
+            <a href="#" class="lw-menu-link">Travel</a>
+            <a href="#" class="lw-menu-link">Technology</a>
+            <a href="#" class="lw-menu-link">Energize</a>
+         </div>
+         <!-- main header menu end -->
+
+         <div class="content-wrapper">
+            <!-- section featuring today start -->
+            <section class="sec-featuring-today">
+               <h3 class="heading-title">Featuring today</h3>
+               <div id="carouselExampleCaptions" class="carousel carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="assets/images/slider-img1.jpg" class="d-block w-100 h-100 object-fit-cover"
+                           alt="img1">
+                        <div class="carousel-caption ">
+                           <h5>Season: 1 &nbsp; Episodes: 6</h5>
+                           <h4>Finding Moments Of Joy In A Challenging Year</h4>
+                           <h6>29th Nov, 2024</h6>
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt in felis malesuada mollis
+                              purus id sit in aliquet lectus eget morbi dui felis malesuada.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="assets/images/slider-img2.jpg" class="d-block w-100 h-100 object-fit-cover"
+                           alt="img2">
+                        <div class="carousel-caption ">
+                           <h5>Season: 2 &nbsp; Episodes: 12</h5>
+                           <h4>Finding Moments Of Joy In A Challenging Year</h4>
+                           <h6>29th Nov, 2024</h6>
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt in felis malesuada mollis
+                              purus id sit in aliquet lectus eget morbi dui felis malesuada.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="assets/images/slider-img3.jpg" class="d-block w-100 h-100 object-fit-cover"
+                           alt="img3">
+                        <div class="carousel-caption ">
+                           <h5>Season: 3 &nbsp; Episodes: 4</h5>
+                           <h4>Finding Moments Of Joy In A Challenging Year</h4>
+                           <h6>29th Nov, 2024</h6>
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt in felis malesuada mollis
+                              purus id sit in aliquet lectus eget morbi dui felis malesuada.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="assets/images/slider-img4.jpg" class="d-block w-100 h-100 object-fit-cover"
+                           alt="img4">
+                        <div class="carousel-caption ">
+                           <h5>Season: 2 &nbsp; Episodes: 12</h5>
+                           <h4>Finding Moments Of Joy In A Challenging Year</h4>
+                           <h6>29th Nov, 2024</h6>
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt in felis malesuada mollis
+                              purus id sit in aliquet lectus eget morbi dui felis malesuada.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                     data-bs-slide="prev">
+                     <i class="far fa-angle-left"></i>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                     data-bs-slide="next">
+                     <i class="far fa-angle-right"></i>
+                  </button>
+               </div>
+            </section>
+            <!-- section featuring today end -->
+
+            <!-- section trending podcast & episode start -->
+            <section class="sec-trending">
+               <div class="d-flex align-items-center justify-content-between mb-32 ">
+                  <h3 class="heading-title">Trending Podcasts & Episodes</h3>
+                  <a href="#" class="lnkBlue">See more</a>
+               </div>
+               <div class="slider-main">
+                  <div class="slider-trending">
+                     <div class="st-item">
+                        <div class="st-img">
+                           <img src="assets/images/trending-img1.jpg" alt="img" />
+                           <div class="st-episodes-box">
+                              <h6>10 episodes</h6>
+                              <div class="d-flex align-items-center">
+                                 <a href="#" class="icon fill">
+                                    <i class="fas fa-heart"></i>
+                                 </a>
+                                 <a href="#" class="icon">
+                                    <i class="far fa-ellipsis-v"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <h5>Sick Boy</h5>
+                        <p>01st Nov, 2024</p>
+                     </div>
+                     <div class="st-item">
+                        <div class="st-img">
+                           <img src="assets/images/trending-img2.jpg" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Lonely Together</h5>
+                        <p>10th Nov, 2024</p>
+                     </div>
+                     <div class="st-item">
+                        <div class="st-img">
+                           <img src="assets/images/trending-img3.jpg" alt="img" />
+                           <div class="st-episodes-box">
+                              <h6>5 episodes</h6>
+                              <div class="d-flex align-items-center">
+                                 <a href="#" class="icon">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a href="#" class="icon">
+                                    <i class="far fa-ellipsis-v"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <h5>Pay No Mind</h5>
+                        <p>13th Nov, 2024</p>
+                     </div>
+                     <div class="st-item">
+                        <div class="st-img">
+                           <img src="assets/images/trending-img4.jpg" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>#SELFIE</h5>
+                        <p>15th Nov, 2024</p>
+                     </div>
+                     <div class="st-item">
+                        <div class="st-img">
+                           <img src="assets/images/trending-img5.jpg" alt="img" />
+                           <div class="st-episodes-box">
+                              <h6>20 episodes</h6>
+                              <div class="d-flex align-items-center">
+                                 <a href="#" class="icon fill">
+                                    <i class="fas fa-heart"></i>
+                                 </a>
+                                 <a href="#" class="icon">
+                                    <i class="far fa-ellipsis-v"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <h5>Until You Were</h5>
+                        <p>16th Nov, 2024</p>
+                     </div>
+                     <div class="st-item">
+                        <div class="st-img">
+                           <img src="assets/images/trending-img6.jpg" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Good Intensions</h5>
+                        <p>29th Nov, 2024</p>
+                     </div>
+                     <div class="st-item">
+                        <div class="st-img">
+                           <img src="assets/images/trending-img3.jpg" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Pay No Mind</h5>
+                        <p>13th Nov, 2024</p>
+                     </div>
+                  </div>
+                  <ul class="sliderArrows">
+                     <li class="prev">
+                        <i class="far fa-angle-left"></i>
+                     </li>
+                     <li class="next">
+                        <i class="far fa-angle-right"></i>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <!-- section trending podcast & episodes end -->
+
+            <!-- section recent views start -->
+            <section class="sec-recent-views">
+               <div class="d-flex align-items-center justify-content-between mb-32 ">
+                  <h3 class="heading-title">Recently Views</h3>
+                  <a href="#" class="lnkBlue">See more</a>
+               </div>
+               <div class="row row-cols-2 row-cols-md-5 g-4">
+                  <div class="col">
+                     <div class="rv-item">
+                        <div class="rv-img">
+                           <img src="assets/images/recent-img1.png" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Inside Out</h5>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="rv-item">
+                        <div class="rv-img">
+                           <img src="assets/images/recent-img2.png" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Young</h5>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="rv-item">
+                        <div class="rv-img">
+                           <img src="assets/images/recent-img3.png" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Beach House</h5>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="rv-item">
+                        <div class="rv-img">
+                           <img src="assets/images/recent-img4.png" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Kills You Slowly</h5>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="rv-item">
+                        <div class="rv-img">
+                           <img src="assets/images/recent-img5.png" alt="img" />
+                           <a href="#" class="btn-gredient">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
+                        <h5>Setting Fires</h5>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- section recent views end -->
+         </div>
+      </main>
+      <!-- main content end -->
+   </div>
+
+
+
+   <!-- js -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="assets/js/main.js" async defer></script>
+</body>
+
+</html>

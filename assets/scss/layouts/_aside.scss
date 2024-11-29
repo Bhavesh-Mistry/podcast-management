@@ -1,0 +1,164 @@
+// Sidebar left
+
+.app-sidebar {
+   display: flex;
+   flex-direction: column;
+   background-color: $clr-primary;
+   width: 400px;
+   font-family: "Josefin Sans", sans-serif;
+   height: 100vh;
+
+   @media($extra-large-desktops) {
+      width: 350px;
+   }
+
+   .app-sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 136px;
+
+      @media($extra-large-desktops) {
+         height: 100px;
+      }
+
+      .app-sidebar-logo {
+         color: transparent;
+         display: block;
+         position: relative;
+      }
+   }
+
+   .app-sidebar-menu {
+      position: relative;
+      font-family: "Josefin Sans", sans-serif;
+      padding: 94px 40px 40px;
+      display: flex;
+      flex-direction: column;
+      max-height: calc(100vh - 136px);
+      overflow: hidden;
+      overflow-y: auto;
+
+      @media($extra-large-desktops) {
+         max-height: calc(100vh - 100px);
+         padding: 45px 30px 30px;
+      }
+
+      &::-webkit-scrollbar {
+         width: 0px;
+      }
+
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      .navbar-nav {
+         li {
+            .nav-link {
+               position: relative;
+               font-family: "Josefin Sans", sans-serif;
+               font-weight: 500;
+               font-size: 24px;
+               line-height: 28px;
+               text-transform: capitalize;
+               color: rgba($white, 0.5);
+               padding: 16px 0;
+
+               @media($extra-large-desktops) {
+                  padding: 10px 0;
+                  font-size: 20px;
+                  line-height: 24px;
+               }
+
+               .icon {
+                  display: inline-block;
+                  text-align: center;
+                  width: 30px;
+                  margin: 0 14px 0 0;
+               }
+
+               &:hover {
+                  color: rgba($white, 0.75);
+               }
+            }
+
+            .dropdown-toggle {
+               &::after {
+                  margin: 0;
+                  position: absolute;
+                  top: 45%;
+                  right: 5px;
+                  border: 0;
+                  border-right:
+                     2px solid rgba($white, 0.5);
+                  border-bottom:
+                     2px solid rgba($white, 0.5);
+                  width: 8px;
+                  height: 8px;
+                  display: inline-block;
+                  padding: 0;
+                  vertical-align: inherit;
+                  transform: rotate(45deg) translateY(-50%);
+                  -webkit-transform: rotate(45deg) translateY(-50%);
+                  transition: 0.15s ease-in-out;
+               }
+
+               &:hover {
+                  &::after {
+                     border-color: rgba($white, 0.75);
+                  }
+               }
+
+               &.show {
+                  color: rgba($white, 0.75);
+
+                  &::after {
+                     top: 44%;
+                     transform: rotate(-135deg) translateY(-50%);
+                     -webkit-transform: rotate(-135deg) translateY(-50%);
+                     right: 0;
+                     border-color: rgba($white, 0.75);
+                  }
+               }
+            }
+
+            .dropdown-menu {
+               position: relative !important;
+               margin-left: 44px !important;
+               transform: inherit !important;
+               padding: 0;
+               background-color: transparent;
+               border: 0;
+               border-radius: 0;
+
+               li {
+                  padding: 2px 0;
+
+                  .dropdown-item {
+                     font-style: normal;
+                     font-weight: 400;
+                     font-size: 20px;
+                     line-height: 28px;
+                     text-transform: capitalize;
+                     color: rgba($white, 0.5);
+                     padding: 12px 24px 8px;
+                     border-radius: 8px;
+
+                     @media($extra-large-desktops) {
+                        padding: 10px 18px 6px;
+                        font-size: 18px;
+                        line-height: 24px;
+                     }
+
+                     &:hover,
+                     &.active {
+                        background: $clr-primary-gradient;
+                        color: $clr-body;
+                        font-weight: 500;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

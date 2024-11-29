@@ -1,0 +1,18 @@
+// abstracts
+@import "../scss/abstracts/variables.scss";
+
+// base
+@import "../scss/base/global.scss";
+@import "../scss/base/typography.scss";
+
+// components
+@import "../scss/components/button.scss";
+@import "../scss/components/form-control.scss";
+@import "../scss/components/slider.scss";
+
+// layouts
+@import "../scss/layouts/header.scss";
+@import "../scss/layouts/aside.scss";
+
+// pages
+@import "../scss/pages/home.scss";
